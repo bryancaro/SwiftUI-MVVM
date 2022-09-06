@@ -14,6 +14,33 @@
 		114E823D28C3842600542183 /* SwiftUI_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E823C28C3842600542183 /* SwiftUI_MVVMTests.swift */; };
 		114E824728C3842600542183 /* SwiftUI_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E824628C3842600542183 /* SwiftUI_MVVMUITests.swift */; };
 		114E824928C3842600542183 /* SwiftUI_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E824828C3842600542183 /* SwiftUI_MVVMUITestsLaunchTests.swift */; };
+		114E826428C388F500542183 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826328C388F500542183 /* NetworkController.swift */; };
+		114E826828C3893500542183 /* NetworkControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826728C3893500542183 /* NetworkControllerProtocol.swift */; };
+		114E826B28C3895B00542183 /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826A28C3895B00542183 /* NetworkEndpoint.swift */; };
+		114E826E28C3898C00542183 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826D28C3898C00542183 /* NetworkResponse.swift */; };
+		114E827128C389EF00542183 /* NetworkDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827028C389EF00542183 /* NetworkDecoder.swift */; };
+		114E827328C38A6A00542183 /* Dictionary-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827228C38A6A00542183 /* Dictionary-Extensions.swift */; };
+		114E827528C38AA600542183 /* TimeInterval-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827428C38AA600542183 /* TimeInterval-Extensions.swift */; };
+		114E827D28C3A4E700542183 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827C28C3A4E700542183 /* ContentView-ViewModel.swift */; };
+		114E828028C3A69200542183 /* ViewModelDataSource-Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827F28C3A69200542183 /* ViewModelDataSource-Protocol.swift */; };
+		114E828228C3B03D00542183 /* AppError-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828128C3B03D00542183 /* AppError-Model.swift */; };
+		114E828428C3B1A800542183 /* ViewModelAlert-Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828328C3B1A800542183 /* ViewModelAlert-Protocol.swift */; };
+		114E828728C3B30A00542183 /* UIImpactFeedBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828628C3B30A00542183 /* UIImpactFeedBack.swift */; };
+		114E828928C3B3C700542183 /* ObservableViewModel-Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828828C3B3C700542183 /* ObservableViewModel-Protocol.swift */; };
+		114E828C28C3B44200542183 /* ObservableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828B28C3B44200542183 /* ObservableViewModel.swift */; };
+		114E828E28C3C3C400542183 /* ContentView-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828D28C3C3C400542183 /* ContentView-Model.swift */; };
+		114E829328C3C51D00542183 /* ViewModelDataManager-Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E829228C3C51D00542183 /* ViewModelDataManager-Protocol.swift */; };
+		114E829528C3C58A00542183 /* ServerDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E829428C3C58A00542183 /* ServerDataManager.swift */; };
+		114E829C28C3C63600542183 /* Content-Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E829B28C3C63600542183 /* Content-Endpoint.swift */; };
+		114E829E28C3C68600542183 /* ContentServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E829D28C3C68600542183 /* ContentServerManager.swift */; };
+		114E82A228C3C7DA00542183 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82A128C3C7DA00542183 /* ContentRepository.swift */; };
+		114E82A428C3C7F000542183 /* ContentServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82A328C3C7F000542183 /* ContentServer.swift */; };
+		114E82A628C3D0C100542183 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82A528C3D0C100542183 /* WeatherResponse.swift */; };
+		114E82A828C3D37D00542183 /* ContentLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82A728C3D37D00542183 /* ContentLocal.swift */; };
+		114E82AA28C3D4D100542183 /* LocationWeather-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82A928C3D4D100542183 /* LocationWeather-Model.swift */; };
+		114E82AF28C3DDE700542183 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82AE28C3DDE700542183 /* LoadingView.swift */; };
+		114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */; };
+		114E82B828C3E1FD00542183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B728C3E1FD00542183 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +71,33 @@
 		114E824228C3842600542183 /* SwiftUI-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E824628C3842600542183 /* SwiftUI_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMUITests.swift; sourceTree = "<group>"; };
 		114E824828C3842600542183 /* SwiftUI_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		114E826328C388F500542183 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		114E826728C3893500542183 /* NetworkControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkControllerProtocol.swift; sourceTree = "<group>"; };
+		114E826A28C3895B00542183 /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		114E826D28C3898C00542183 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		114E827028C389EF00542183 /* NetworkDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecoder.swift; sourceTree = "<group>"; };
+		114E827228C38A6A00542183 /* Dictionary-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extensions.swift"; sourceTree = "<group>"; };
+		114E827428C38AA600542183 /* TimeInterval-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval-Extensions.swift"; sourceTree = "<group>"; };
+		114E827C28C3A4E700542183 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		114E827F28C3A69200542183 /* ViewModelDataSource-Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelDataSource-Protocol.swift"; sourceTree = "<group>"; };
+		114E828128C3B03D00542183 /* AppError-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppError-Model.swift"; sourceTree = "<group>"; };
+		114E828328C3B1A800542183 /* ViewModelAlert-Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelAlert-Protocol.swift"; sourceTree = "<group>"; };
+		114E828628C3B30A00542183 /* UIImpactFeedBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImpactFeedBack.swift; sourceTree = "<group>"; };
+		114E828828C3B3C700542183 /* ObservableViewModel-Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableViewModel-Protocol.swift"; sourceTree = "<group>"; };
+		114E828B28C3B44200542183 /* ObservableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewModel.swift; sourceTree = "<group>"; };
+		114E828D28C3C3C400542183 /* ContentView-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-Model.swift"; sourceTree = "<group>"; };
+		114E829228C3C51D00542183 /* ViewModelDataManager-Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelDataManager-Protocol.swift"; sourceTree = "<group>"; };
+		114E829428C3C58A00542183 /* ServerDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataManager.swift; sourceTree = "<group>"; };
+		114E829B28C3C63600542183 /* Content-Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content-Endpoint.swift"; sourceTree = "<group>"; };
+		114E829D28C3C68600542183 /* ContentServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentServerManager.swift; sourceTree = "<group>"; };
+		114E82A128C3C7DA00542183 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		114E82A328C3C7F000542183 /* ContentServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentServer.swift; sourceTree = "<group>"; };
+		114E82A528C3D0C100542183 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		114E82A728C3D37D00542183 /* ContentLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLocal.swift; sourceTree = "<group>"; };
+		114E82A928C3D4D100542183 /* LocationWeather-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationWeather-Model.swift"; sourceTree = "<group>"; };
+		114E82AE28C3DDE700542183 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView-Modifier.swift"; sourceTree = "<group>"; };
+		114E82B728C3E1FD00542183 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +148,12 @@
 		114E822A28C3842400542183 /* SwiftUI-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				114E822B28C3842400542183 /* SwiftUI_MVVMApp.swift */,
-				114E822D28C3842400542183 /* ContentView.swift */,
-				114E822F28C3842600542183 /* Assets.xcassets */,
+				114E825928C3870E00542183 /* BaseFiles */,
+				114E825528C386A600542183 /* Modules */,
+				114E825628C386C000542183 /* CommonShared */,
+				114E825828C386DB00542183 /* API */,
+				114E825728C386CA00542183 /* SuportingFiles */,
+				114E825A28C3872C00542183 /* Assets */,
 				114E823128C3842600542183 /* Preview Content */,
 			);
 			path = "SwiftUI-MVVM";
@@ -125,6 +182,398 @@
 				114E824828C3842600542183 /* SwiftUI_MVVMUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-MVVMUITests";
+			sourceTree = "<group>";
+		};
+		114E825528C386A600542183 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				114E827628C38DC200542183 /* Content */,
+				114E82B228C3E1AF00542183 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		114E825628C386C000542183 /* CommonShared */ = {
+			isa = PBXGroup;
+			children = (
+				114E825D28C387CF00542183 /* Models */,
+				114E826028C3881900542183 /* Utilities */,
+				114E825C28C387BF00542183 /* View */,
+				114E826128C3884800542183 /* Modifiers */,
+				114E825B28C387AF00542183 /* Extensions */,
+				114E827E28C3A66C00542183 /* Protocols */,
+			);
+			path = CommonShared;
+			sourceTree = "<group>";
+		};
+		114E825728C386CA00542183 /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		114E825828C386DB00542183 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				114E828F28C3C4D300542183 /* Combine */,
+				114E829028C3C4ED00542183 /* DataManager */,
+				114E829628C3C5DC00542183 /* Servers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		114E825928C3870E00542183 /* BaseFiles */ = {
+			isa = PBXGroup;
+			children = (
+				114E822B28C3842400542183 /* SwiftUI_MVVMApp.swift */,
+			);
+			path = BaseFiles;
+			sourceTree = "<group>";
+		};
+		114E825A28C3872C00542183 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				114E822F28C3842600542183 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		114E825B28C387AF00542183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				114E827228C38A6A00542183 /* Dictionary-Extensions.swift */,
+				114E827428C38AA600542183 /* TimeInterval-Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		114E825C28C387BF00542183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114E825E28C387F100542183 /* Card */,
+				114E825F28C387F700542183 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114E825D28C387CF00542183 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				114E828128C3B03D00542183 /* AppError-Model.swift */,
+				114E82A928C3D4D100542183 /* LocationWeather-Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		114E825E28C387F100542183 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		114E825F28C387F700542183 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				114E82AD28C3DDCB00542183 /* Loading */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		114E826028C3881900542183 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				114E828A28C3B43B00542183 /* ObservableViewModel */,
+				114E828528C3B2E900542183 /* UIImpactFeedBack */,
+				114E826228C3884F00542183 /* DesignRules */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		114E826128C3884800542183 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		114E826228C3884F00542183 /* DesignRules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignRules;
+			sourceTree = "<group>";
+		};
+		114E826528C3891500542183 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				114E826328C388F500542183 /* NetworkController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		114E826628C3891A00542183 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				114E826728C3893500542183 /* NetworkControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		114E826928C3894800542183 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				114E826A28C3895B00542183 /* NetworkEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		114E826C28C3897700542183 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				114E826D28C3898C00542183 /* NetworkResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		114E826F28C389DC00542183 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				114E827028C389EF00542183 /* NetworkDecoder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		114E827628C38DC200542183 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				114E827A28C38DDE00542183 /* Model */,
+				114E827928C38DD900542183 /* View */,
+				114E827828C38DD200542183 /* ViewModel */,
+				114E827728C38DCA00542183 /* Repository */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		114E827728C38DCA00542183 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				114E82A128C3C7DA00542183 /* ContentRepository.swift */,
+				114E82A028C3C7C300542183 /* Server */,
+				114E829F28C3C7BD00542183 /* Local */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		114E827828C38DD200542183 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				114E827C28C3A4E700542183 /* ContentView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		114E827928C38DD900542183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114E82AB28C3DDA800542183 /* Card */,
+				114E82AC28C3DDAE00542183 /* Component */,
+				114E822D28C3842400542183 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114E827A28C38DDE00542183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				114E828D28C3C3C400542183 /* ContentView-Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		114E827E28C3A66C00542183 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				114E828828C3B3C700542183 /* ObservableViewModel-Protocol.swift */,
+				114E827F28C3A69200542183 /* ViewModelDataSource-Protocol.swift */,
+				114E829228C3C51D00542183 /* ViewModelDataManager-Protocol.swift */,
+				114E828328C3B1A800542183 /* ViewModelAlert-Protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		114E828528C3B2E900542183 /* UIImpactFeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				114E828628C3B30A00542183 /* UIImpactFeedBack.swift */,
+			);
+			path = UIImpactFeedBack;
+			sourceTree = "<group>";
+		};
+		114E828A28C3B43B00542183 /* ObservableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				114E828B28C3B44200542183 /* ObservableViewModel.swift */,
+			);
+			path = ObservableViewModel;
+			sourceTree = "<group>";
+		};
+		114E828F28C3C4D300542183 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				114E826628C3891A00542183 /* Protocol */,
+				114E826528C3891500542183 /* Controller */,
+				114E826F28C389DC00542183 /* Utilities */,
+				114E826C28C3897700542183 /* Response */,
+				114E826928C3894800542183 /* Endpoint */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		114E829028C3C4ED00542183 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				114E829428C3C58A00542183 /* ServerDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		114E829628C3C5DC00542183 /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				114E829828C3C60800542183 /* Response */,
+				114E829728C3C5EE00542183 /* Content */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		114E829728C3C5EE00542183 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				114E829928C3C61400542183 /* Endpoint */,
+				114E829A28C3C61A00542183 /* Server */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		114E829828C3C60800542183 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				114E82A528C3D0C100542183 /* WeatherResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		114E829928C3C61400542183 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				114E829B28C3C63600542183 /* Content-Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		114E829A28C3C61A00542183 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				114E829D28C3C68600542183 /* ContentServerManager.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		114E829F28C3C7BD00542183 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				114E82A728C3D37D00542183 /* ContentLocal.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		114E82A028C3C7C300542183 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				114E82A328C3C7F000542183 /* ContentServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		114E82AB28C3DDA800542183 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		114E82AC28C3DDAE00542183 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		114E82AD28C3DDCB00542183 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				114E82AE28C3DDE700542183 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		114E82B228C3E1AF00542183 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				114E82B628C3E1ED00542183 /* Model */,
+				114E82B528C3E1E900542183 /* View */,
+				114E82B428C3E1E400542183 /* ViewModel */,
+				114E82B328C3E1D800542183 /* Repository */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		114E82B328C3E1D800542183 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		114E82B428C3E1E400542183 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		114E82B528C3E1E900542183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114E82BA28C3E20600542183 /* Card */,
+				114E82B928C3E20200542183 /* Component */,
+				114E82B728C3E1FD00542183 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114E82B628C3E1ED00542183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		114E82B928C3E20200542183 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		114E82BA28C3E20600542183 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +706,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114E829328C3C51D00542183 /* ViewModelDataManager-Protocol.swift in Sources */,
 				114E822E28C3842400542183 /* ContentView.swift in Sources */,
+				114E828428C3B1A800542183 /* ViewModelAlert-Protocol.swift in Sources */,
+				114E827328C38A6A00542183 /* Dictionary-Extensions.swift in Sources */,
+				114E828928C3B3C700542183 /* ObservableViewModel-Protocol.swift in Sources */,
+				114E827528C38AA600542183 /* TimeInterval-Extensions.swift in Sources */,
+				114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */,
+				114E828C28C3B44200542183 /* ObservableViewModel.swift in Sources */,
+				114E82A628C3D0C100542183 /* WeatherResponse.swift in Sources */,
+				114E82AF28C3DDE700542183 /* LoadingView.swift in Sources */,
 				114E822C28C3842400542183 /* SwiftUI_MVVMApp.swift in Sources */,
+				114E826828C3893500542183 /* NetworkControllerProtocol.swift in Sources */,
+				114E828E28C3C3C400542183 /* ContentView-Model.swift in Sources */,
+				114E828728C3B30A00542183 /* UIImpactFeedBack.swift in Sources */,
+				114E826428C388F500542183 /* NetworkController.swift in Sources */,
+				114E82B828C3E1FD00542183 /* DetailView.swift in Sources */,
+				114E827128C389EF00542183 /* NetworkDecoder.swift in Sources */,
+				114E828028C3A69200542183 /* ViewModelDataSource-Protocol.swift in Sources */,
+				114E829528C3C58A00542183 /* ServerDataManager.swift in Sources */,
+				114E82A828C3D37D00542183 /* ContentLocal.swift in Sources */,
+				114E829E28C3C68600542183 /* ContentServerManager.swift in Sources */,
+				114E828228C3B03D00542183 /* AppError-Model.swift in Sources */,
+				114E82A228C3C7DA00542183 /* ContentRepository.swift in Sources */,
+				114E827D28C3A4E700542183 /* ContentView-ViewModel.swift in Sources */,
+				114E826B28C3895B00542183 /* NetworkEndpoint.swift in Sources */,
+				114E829C28C3C63600542183 /* Content-Endpoint.swift in Sources */,
+				114E82A428C3C7F000542183 /* ContentServer.swift in Sources */,
+				114E826E28C3898C00542183 /* NetworkResponse.swift in Sources */,
+				114E82AA28C3D4D100542183 /* LocationWeather-Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
