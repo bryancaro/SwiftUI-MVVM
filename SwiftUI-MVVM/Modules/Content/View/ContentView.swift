@@ -33,7 +33,7 @@ struct ContentView: View {
                         }
                         
                         Button(action: viewModel.openDetailAction) {
-                            Text("Open Detail View")
+                            Text("Open Detail View ")
                                 .bold()
                                 .foregroundColor(.white)
                                 .padding()
