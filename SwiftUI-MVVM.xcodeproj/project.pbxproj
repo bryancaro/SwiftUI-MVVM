@@ -42,6 +42,11 @@
 		114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */; };
 		114E82B828C3E1FD00542183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B728C3E1FD00542183 /* DetailView.swift */; };
 		1172EE9728C7F7DF00501B39 /* ServerManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */; };
+		11C9CDE028C8F6AA00FF7539 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9CDDB28C8F6AA00FF7539 /* ConfigurationManager.swift */; };
+		11C9CDE128C8F6AA00FF7539 /* ConfigReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9CDDC28C8F6AA00FF7539 /* ConfigReader.swift */; };
+		11C9CDE428C8F6E700FF7539 /* ConfigurationDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */; };
+		11C9CDE728C8F72100FF7539 /* ConfigurationQA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE628C8F72100FF7539 /* ConfigurationQA.plist */; };
+		11C9CDEA28C8F74500FF7539 /* ConfigurationProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE928C8F74500FF7539 /* ConfigurationProd.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,11 @@
 		114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView-Modifier.swift"; sourceTree = "<group>"; };
 		114E82B728C3E1FD00542183 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerError.swift; sourceTree = "<group>"; };
+		11C9CDDB28C8F6AA00FF7539 /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		11C9CDDC28C8F6AA00FF7539 /* ConfigReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigReader.swift; sourceTree = "<group>"; };
+		11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationDev.plist; sourceTree = "<group>"; };
+		11C9CDE628C8F72100FF7539 /* ConfigurationQA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationQA.plist; sourceTree = "<group>"; };
+		11C9CDE928C8F74500FF7539 /* ConfigurationProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationProd.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,7 @@
 		1108E46328C7B806006C2605 /* SuportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				11C9CDD728C8F67C00FF7539 /* AppConfig */,
 			);
 			path = SuportingFiles;
 			sourceTree = "<group>";
@@ -587,6 +598,42 @@
 			path = ErrorManager;
 			sourceTree = "<group>";
 		};
+		11C9CDD728C8F67C00FF7539 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				11C9CDDC28C8F6AA00FF7539 /* ConfigReader.swift */,
+				11C9CDDB28C8F6AA00FF7539 /* ConfigurationManager.swift */,
+				11C9CDE228C8F6DB00FF7539 /* Development */,
+				11C9CDE528C8F71200FF7539 /* QA */,
+				11C9CDE828C8F73600FF7539 /* Production */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		11C9CDE228C8F6DB00FF7539 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		11C9CDE528C8F71200FF7539 /* QA */ = {
+			isa = PBXGroup;
+			children = (
+				11C9CDE628C8F72100FF7539 /* ConfigurationQA.plist */,
+			);
+			path = QA;
+			sourceTree = "<group>";
+		};
+		11C9CDE828C8F73600FF7539 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				11C9CDE928C8F74500FF7539 /* ConfigurationProd.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -691,8 +738,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C9CDEA28C8F74500FF7539 /* ConfigurationProd.plist in Resources */,
 				114E823328C3842600542183 /* Preview Assets.xcassets in Resources */,
+				11C9CDE728C8F72100FF7539 /* ConfigurationQA.plist in Resources */,
 				114E823028C3842600542183 /* Assets.xcassets in Resources */,
+				11C9CDE428C8F6E700FF7539 /* ConfigurationDev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +788,8 @@
 				114E829528C3C58A00542183 /* ServerDataManager.swift in Sources */,
 				114E82A828C3D37D00542183 /* ContentLocal.swift in Sources */,
 				114E829E28C3C68600542183 /* ContentServerManager.swift in Sources */,
+				11C9CDE028C8F6AA00FF7539 /* ConfigurationManager.swift in Sources */,
+				11C9CDE128C8F6AA00FF7539 /* ConfigReader.swift in Sources */,
 				114E828228C3B03D00542183 /* AppError-Model.swift in Sources */,
 				114E82A228C3C7DA00542183 /* ContentRepository.swift in Sources */,
 				1172EE9728C7F7DF00501B39 /* ServerManagerError.swift in Sources */,
