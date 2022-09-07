@@ -32,6 +32,12 @@ class ServerDataManager {
     func handle(f: () throws -> Void) throws {
         do {
             try f()
+        } catch ServerManagerError.serverError(let message) {
+            self.callbackDelegate?.serverError(message)
+        } catch ServerManagerError.clientError(let message) {
+            self.callbackDelegate?.defaultError(message)
+        } catch ServerManagerError.checkAccessError(let message) {
+            self.callbackDelegate?.defaultError(message)
         } catch let error {
             throw error
         }

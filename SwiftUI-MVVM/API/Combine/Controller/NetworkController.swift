@@ -88,11 +88,13 @@ class NetworkController: NetworkControllerProtocol {
                     let errorValue = try decoder.decode(ErrorResponse.self, from: result.data)
                     
                     throw errorValue
-                } catch {
+                } catch let error {
                     print("[COMBINE][idRequest_\(randomRequest)][PARSER][KO] \(error)")
-                    let errorValue = try decoder.decode(ErrorResponse.self, from: result.data)
-                    
-                    throw errorValue
+                    if let parsedError = ServerManagerErrorHandler().validate(error: error, responseData: result.data, statusCode: response.statusCode) {
+                        throw parsedError
+                    } else {
+                        throw error
+                    }
                 }
             }
             .receive(on: DispatchQueue.main)

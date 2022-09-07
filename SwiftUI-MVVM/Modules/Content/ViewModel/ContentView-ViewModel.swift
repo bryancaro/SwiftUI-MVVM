@@ -49,8 +49,16 @@ extension ContentView {
             readLondonWeather()
         }
         
+        func getErrorLondonWeatherAction() {
+            readErrorLondonWeather()
+        }
+        
         func openDetailAction() {
             showDetail = true
+        }
+        
+        func closeDetailAction() {
+            showDetail = false
         }
         
         override func dismissAlertAction() {
@@ -61,6 +69,15 @@ extension ContentView {
         private func readLondonWeather() {
             showLoading()
             repository.readLondonWeather { [weak self] londonWeather in
+                print(londonWeather)
+                self?.londonWeather = londonWeather
+                self?.dismissLoading()
+            }
+        }
+        
+        private func readErrorLondonWeather() {
+            showLoading()
+            repository.readLondonWeatherErrorMsg { [weak self] londonWeather in
                 print(londonWeather)
                 self?.londonWeather = londonWeather
                 self?.dismissLoading()
@@ -84,5 +101,3 @@ extension ContentView.ViewModel: ViewModelDataSourceProtocol {
         
     }
 }
-
-

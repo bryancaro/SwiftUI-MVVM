@@ -11,13 +11,15 @@ struct DetailView: View {
     //  MARK: - Environment
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     //  MARK: - Observed Object
+    @ObservedObject var viewModel: ContentView.ViewModel
     //  MARK: - Binding variables
     //  MARK: - State variables
     //  MARK: - Constant variables
     //  MARK: - Properties
     //  MARK: - Initializer View
-    init() {
+    init(viewModel: ContentView.ViewModel) {
         print("[DEBUG]-[VIEW] [DetailView]: [init]")
+        self.viewModel = viewModel
     }
     //  MARK: - Principal View
     var body: some View {
@@ -55,13 +57,14 @@ extension DetailView {
     }
     
     func dismissView() {
-        presentationMode.wrappedValue.dismiss()
+        viewModel.closeDetailAction()
+        //presentationMode.wrappedValue.dismiss()
     }
 }
 
 //  MARK: - Preview
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(viewModel: ContentView.ViewModel())
     }
 }

@@ -9,6 +9,7 @@ import Foundation
 
 protocol ContentRepositoryProtocol: ViewModelDataManagerProtocol {
     func readLondonWeather(completion: @escaping(LocationWeatherModel) -> Void)
+    func readLondonWeatherErrorMsg(completion: @escaping(LocationWeatherModel) -> Void)
 }
 
 class ContentRepository: ServerDataManager {
@@ -25,6 +26,21 @@ class ContentRepository: ServerDataManager {
 extension ContentRepository: ContentRepositoryProtocol {
     func readLondonWeather(completion: @escaping(LocationWeatherModel) -> Void) {
         server.getLondonWeather { [weak self] result in
+            do {
+                try self?.handle {
+                    let response = try result.get()
+                    let model    = LocationWeatherModel(response)
+                    completion(model)
+                }
+            } catch let error {
+                let result = error.localizedDescription
+                self?.callbackDelegate?.defaultError(result)
+            }
+        }
+    }
+    
+    func readLondonWeatherErrorMsg(completion: @escaping(LocationWeatherModel) -> Void) {
+        server.getLondonWeatherErrorMsg { [weak self] result in
             do {
                 try self?.handle {
                     let response = try result.get()

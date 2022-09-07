@@ -10,6 +10,7 @@ import Combine
 
 protocol ContentServerProtocol {
     func getLondonWeather(completion: @escaping(Result<LocationWeatherResponse, Error>) -> Void)
+    func getLondonWeatherErrorMsg(completion: @escaping(Result<LocationWeatherResponse, Error>) -> Void)
 }
 
 final class ContentServer: Network, ContentServer.ServerCalls {
@@ -29,7 +30,22 @@ final class ContentServer: Network, ContentServer.ServerCalls {
                 }
             }, receiveValue: { response in
                 print("[DEBUG] [API] [getLondonWeather] [RESPONSE]")
-                print(response)
+                completion(Result.success(response))
+            })
+    }
+    
+    func getLondonWeatherErrorMsg(completion: @escaping(Result<LocationWeatherResponse, Error>) -> Void) {
+        cancellableGetLondonWeather = manager.getLondonWeatherErrorMsg()
+            .sink(receiveCompletion: { result in
+                switch result {
+                case .finished:
+                    print("[DEBUG] [API] [getLondonWeather] [FINISHED]")
+                case .failure(let error):
+                    print("[DEBUG] [API] [getLondonWeather] [ERROR] [\(error.localizedDescription)]")
+                    completion(Result.failure(error))
+                }
+            }, receiveValue: { response in
+                print("[DEBUG] [API] [getLondonWeather] [RESPONSE]")
                 completion(Result.success(response))
             })
     }

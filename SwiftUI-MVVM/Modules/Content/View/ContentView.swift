@@ -23,13 +23,24 @@ struct ContentView: View {
             NavigationView {
                 ZStack {
                     VStack {
-                        Button(action: viewModel.getLondonWeatherAction) {
-                            Text("Print London Weather")
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.blue)
-                                .cornerRadius(15)
+                        HStack {
+                            Button(action: viewModel.getLondonWeatherAction) {
+                                Text("Success API Call")
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(15)
+                            }
+                            
+                            Button(action: viewModel.getErrorLondonWeatherAction) {
+                                Text("Error API Call")
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(15)
+                            }
                         }
                         
                         Button(action: viewModel.openDetailAction) {
@@ -43,7 +54,7 @@ struct ContentView: View {
                     }
                     
                     NavigationLink(isActive: $viewModel.showDetail) {
-                        DetailView()
+                        DetailView(viewModel: viewModel)
                     } label: {
                         EmptyView()
                     }

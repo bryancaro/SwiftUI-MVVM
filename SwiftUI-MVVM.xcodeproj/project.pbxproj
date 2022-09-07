@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1108E46528C7B816006C2605 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108E46428C7B816006C2605 /* AppConfig.swift */; };
 		114E822C28C3842400542183 /* SwiftUI_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E822B28C3842400542183 /* SwiftUI_MVVMApp.swift */; };
 		114E822E28C3842400542183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E822D28C3842400542183 /* ContentView.swift */; };
 		114E823028C3842600542183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114E822F28C3842600542183 /* Assets.xcassets */; };
@@ -42,6 +41,7 @@
 		114E82AF28C3DDE700542183 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82AE28C3DDE700542183 /* LoadingView.swift */; };
 		114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */; };
 		114E82B828C3E1FD00542183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B728C3E1FD00542183 /* DetailView.swift */; };
+		1172EE9728C7F7DF00501B39 /* ServerManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1108E46428C7B816006C2605 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		114E822828C3842400542183 /* SwiftUI-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E822B28C3842400542183 /* SwiftUI_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMApp.swift; sourceTree = "<group>"; };
 		114E822D28C3842400542183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		114E82AE28C3DDE700542183 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView-Modifier.swift"; sourceTree = "<group>"; };
 		114E82B728C3E1FD00542183 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,6 @@
 		1108E46328C7B806006C2605 /* SuportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				1108E46428C7B816006C2605 /* AppConfig.swift */,
 			);
 			path = SuportingFiles;
 			sourceTree = "<group>";
@@ -221,6 +220,7 @@
 			children = (
 				114E828F28C3C4D300542183 /* Combine */,
 				114E829028C3C4ED00542183 /* DataManager */,
+				1172EE9528C7F7D000501B39 /* ErrorManager */,
 				114E829628C3C5DC00542183 /* Servers */,
 			);
 			path = API;
@@ -579,6 +579,14 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		1172EE9528C7F7D000501B39 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */,
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -730,9 +738,9 @@
 				114E829528C3C58A00542183 /* ServerDataManager.swift in Sources */,
 				114E82A828C3D37D00542183 /* ContentLocal.swift in Sources */,
 				114E829E28C3C68600542183 /* ContentServerManager.swift in Sources */,
-				1108E46528C7B816006C2605 /* AppConfig.swift in Sources */,
 				114E828228C3B03D00542183 /* AppError-Model.swift in Sources */,
 				114E82A228C3C7DA00542183 /* ContentRepository.swift in Sources */,
+				1172EE9728C7F7DF00501B39 /* ServerManagerError.swift in Sources */,
 				114E827D28C3A4E700542183 /* ContentView-ViewModel.swift in Sources */,
 				114E826B28C3895B00542183 /* NetworkEndpoint.swift in Sources */,
 				114E829C28C3C63600542183 /* Content-Endpoint.swift in Sources */,
