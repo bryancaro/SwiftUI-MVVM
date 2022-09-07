@@ -53,6 +53,10 @@ extension ContentView {
             readErrorLondonWeather()
         }
         
+        func readEnvironment() {
+            print(ConfigReader.environment())
+        }
+        
         func openDetailAction() {
             showDetail = true
         }

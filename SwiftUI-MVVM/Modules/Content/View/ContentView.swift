@@ -43,6 +43,11 @@ struct ContentView: View {
                             }
                         }
                         
+                        Circle()
+                            .foregroundColor(.red)
+                            .frame(width: 50, height: 50)
+                            .onTapGesture(perform: viewModel.readEnvironment)
+                        
                         Button(action: viewModel.openDetailAction) {
                             Text("Open Detail View")
                                 .bold()
