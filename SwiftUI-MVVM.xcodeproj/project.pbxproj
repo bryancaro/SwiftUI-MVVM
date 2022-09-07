@@ -47,6 +47,7 @@
 		11C9CDE428C8F6E700FF7539 /* ConfigurationDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */; };
 		11C9CDE728C8F72100FF7539 /* ConfigurationQA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE628C8F72100FF7539 /* ConfigurationQA.plist */; };
 		11C9CDEA28C8F74500FF7539 /* ConfigurationProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE928C8F74500FF7539 /* ConfigurationProd.plist */; };
+		11C9CDF328C8FB8400FF7539 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDF528C8FB8400FF7539 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		11C9CDE628C8F72100FF7539 /* ConfigurationQA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationQA.plist; sourceTree = "<group>"; };
 		11C9CDE928C8F74500FF7539 /* ConfigurationProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationProd.plist; sourceTree = "<group>"; };
 		11C9CDF028C8FA9200FF7539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11C9CDF428C8FB8400FF7539 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11C9CDF628C8FB8600FF7539 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				11C9CDD728C8F67C00FF7539 /* AppConfig */,
+				11C9CDF528C8FB8400FF7539 /* Localizable.strings */,
 			);
 			path = SuportingFiles;
 			sourceTree = "<group>";
@@ -742,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C9CDEA28C8F74500FF7539 /* ConfigurationProd.plist in Resources */,
+				11C9CDF328C8FB8400FF7539 /* Localizable.strings in Resources */,
 				114E823328C3842600542183 /* Preview Assets.xcassets in Resources */,
 				11C9CDE728C8F72100FF7539 /* ConfigurationQA.plist in Resources */,
 				114E823028C3842600542183 /* Assets.xcassets in Resources */,
@@ -836,6 +841,18 @@
 			targetProxy = 114E824328C3842600542183 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11C9CDF528C8FB8400FF7539 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C9CDF428C8FB8400FF7539 /* en */,
+				11C9CDF628C8FB8600FF7539 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		114E824A28C3842600542183 /* Dev */ = {
