@@ -19,8 +19,8 @@
 		114E826B28C3895B00542183 /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826A28C3895B00542183 /* NetworkEndpoint.swift */; };
 		114E826E28C3898C00542183 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E826D28C3898C00542183 /* NetworkResponse.swift */; };
 		114E827128C389EF00542183 /* NetworkDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827028C389EF00542183 /* NetworkDecoder.swift */; };
-		114E827328C38A6A00542183 /* Dictionary-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827228C38A6A00542183 /* Dictionary-Extensions.swift */; };
-		114E827528C38AA600542183 /* TimeInterval-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827428C38AA600542183 /* TimeInterval-Extensions.swift */; };
+		114E827328C38A6A00542183 /* Dictionary-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827228C38A6A00542183 /* Dictionary-Extension.swift */; };
+		114E827528C38AA600542183 /* TimeInterval-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827428C38AA600542183 /* TimeInterval-Extension.swift */; };
 		114E827D28C3A4E700542183 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827C28C3A4E700542183 /* ContentView-ViewModel.swift */; };
 		114E828028C3A69200542183 /* ViewModelDataSource-Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E827F28C3A69200542183 /* ViewModelDataSource-Protocol.swift */; };
 		114E828228C3B03D00542183 /* AppError-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E828128C3B03D00542183 /* AppError-Model.swift */; };
@@ -42,6 +42,7 @@
 		114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */; };
 		114E82B828C3E1FD00542183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E82B728C3E1FD00542183 /* DetailView.swift */; };
 		1172EE9728C7F7DF00501B39 /* ServerManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */; };
+		11909DE228C9EE78006FC013 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11909DE128C9EE78006FC013 /* String-Extension.swift */; };
 		11C9CDE028C8F6AA00FF7539 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9CDDB28C8F6AA00FF7539 /* ConfigurationManager.swift */; };
 		11C9CDE128C8F6AA00FF7539 /* ConfigReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9CDDC28C8F6AA00FF7539 /* ConfigReader.swift */; };
 		11C9CDE428C8F6E700FF7539 /* ConfigurationDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */; };
@@ -83,8 +84,8 @@
 		114E826A28C3895B00542183 /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
 		114E826D28C3898C00542183 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		114E827028C389EF00542183 /* NetworkDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecoder.swift; sourceTree = "<group>"; };
-		114E827228C38A6A00542183 /* Dictionary-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extensions.swift"; sourceTree = "<group>"; };
-		114E827428C38AA600542183 /* TimeInterval-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval-Extensions.swift"; sourceTree = "<group>"; };
+		114E827228C38A6A00542183 /* Dictionary-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extension.swift"; sourceTree = "<group>"; };
+		114E827428C38AA600542183 /* TimeInterval-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval-Extension.swift"; sourceTree = "<group>"; };
 		114E827C28C3A4E700542183 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		114E827F28C3A69200542183 /* ViewModelDataSource-Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelDataSource-Protocol.swift"; sourceTree = "<group>"; };
 		114E828128C3B03D00542183 /* AppError-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppError-Model.swift"; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		114E82B028C3DF5B00542183 /* LoadingView-Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView-Modifier.swift"; sourceTree = "<group>"; };
 		114E82B728C3E1FD00542183 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1172EE9628C7F7DF00501B39 /* ServerManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerError.swift; sourceTree = "<group>"; };
+		11909DE128C9EE78006FC013 /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		11C9CDDB28C8F6AA00FF7539 /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		11C9CDDC28C8F6AA00FF7539 /* ConfigReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigReader.swift; sourceTree = "<group>"; };
 		11C9CDE328C8F6E700FF7539 /* ConfigurationDev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationDev.plist; sourceTree = "<group>"; };
@@ -262,8 +264,9 @@
 		114E825B28C387AF00542183 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				114E827228C38A6A00542183 /* Dictionary-Extensions.swift */,
-				114E827428C38AA600542183 /* TimeInterval-Extensions.swift */,
+				114E827228C38A6A00542183 /* Dictionary-Extension.swift */,
+				114E827428C38AA600542183 /* TimeInterval-Extension.swift */,
+				11909DE128C9EE78006FC013 /* String-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -778,9 +781,9 @@
 				114E829328C3C51D00542183 /* ViewModelDataManager-Protocol.swift in Sources */,
 				114E822E28C3842400542183 /* ContentView.swift in Sources */,
 				114E828428C3B1A800542183 /* ViewModelAlert-Protocol.swift in Sources */,
-				114E827328C38A6A00542183 /* Dictionary-Extensions.swift in Sources */,
+				114E827328C38A6A00542183 /* Dictionary-Extension.swift in Sources */,
 				114E828928C3B3C700542183 /* ObservableViewModel-Protocol.swift in Sources */,
-				114E827528C38AA600542183 /* TimeInterval-Extensions.swift in Sources */,
+				114E827528C38AA600542183 /* TimeInterval-Extension.swift in Sources */,
 				114E82B128C3DF5B00542183 /* LoadingView-Modifier.swift in Sources */,
 				114E828C28C3B44200542183 /* ObservableViewModel.swift in Sources */,
 				114E82A628C3D0C100542183 /* WeatherResponse.swift in Sources */,
@@ -804,6 +807,7 @@
 				114E827D28C3A4E700542183 /* ContentView-ViewModel.swift in Sources */,
 				114E826B28C3895B00542183 /* NetworkEndpoint.swift in Sources */,
 				114E829C28C3C63600542183 /* Content-Endpoint.swift in Sources */,
+				11909DE228C9EE78006FC013 /* String-Extension.swift in Sources */,
 				114E82A428C3C7F000542183 /* ContentServer.swift in Sources */,
 				114E826E28C3898C00542183 /* NetworkResponse.swift in Sources */,
 				114E82AA28C3D4D100542183 /* LocationWeather-Model.swift in Sources */,

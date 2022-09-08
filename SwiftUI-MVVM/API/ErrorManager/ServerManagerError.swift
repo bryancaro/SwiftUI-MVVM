@@ -43,7 +43,7 @@ struct ServerManagerErrorHandler {
     
     //  MARK: - Default Error
     private func makeServerError(_ error: String?) -> ServerManagerError {
-        let result = "default.error.message"
+        let result = "default_error".localized
         return ServerManagerError.serverError(error ?? result)
     }
     
@@ -62,10 +62,10 @@ struct ServerManagerErrorHandler {
                 responseError = try decoder.decode(ErrorResponse.self, from: data)
             } catch let error {
                 print("[DECODE ERROR]:\(error)")
-                return ServerManagerError.checkAccessError("default.error.message")
+                return ServerManagerError.checkAccessError("default_error".localized)
             }
         }
-        result = responseError?.message ?? "default.error.message"
+        result = responseError?.message ?? "default_error".localized
         return ServerManagerError.checkAccessError(result)
     }
     
@@ -83,10 +83,10 @@ struct ServerManagerErrorHandler {
                 responseError = try decoder.decode(ErrorResponse.self, from: data)
             } catch let error {
                 print("[DECODE ERROR]:\(error)")
-                return ServerManagerError.checkAccessError("default.error.message")
+                return ServerManagerError.checkAccessError("default_error".localized)
             }
         }
-        result = responseError?.message ?? "default.error.message"
+        result = responseError?.message ?? "default_error".localized
         return ServerManagerError.clientError(result)
     }
 }

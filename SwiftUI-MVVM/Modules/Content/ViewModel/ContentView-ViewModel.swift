@@ -11,7 +11,7 @@ import Combine
 extension ContentView {
     class ViewModel: ObservableViewModel, ObservableViewModelProtocol {
         //  MARK: - Published
-        @Published var showDetail: Bool = false
+        @Published var showDetail   : Bool = false
         @Published var londonWeather: LocationWeatherModel?
         //  MARK: - API Cancellable
         //  MARK: - Constants

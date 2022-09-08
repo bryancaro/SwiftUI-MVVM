@@ -17,6 +17,7 @@ final class ContentServer: Network, ContentServer.ServerCalls {
     typealias ServerCalls = ContentServerProtocol
     
     private var cancellableGetLondonWeather: Cancellable?
+    private var cancellableGetLondonWeatherErrorMsg: Cancellable?
     
     func getLondonWeather(completion: @escaping(Result<LocationWeatherResponse, Error>) -> Void) {
         cancellableGetLondonWeather = manager.getLondonWeather()
@@ -35,7 +36,7 @@ final class ContentServer: Network, ContentServer.ServerCalls {
     }
     
     func getLondonWeatherErrorMsg(completion: @escaping(Result<LocationWeatherResponse, Error>) -> Void) {
-        cancellableGetLondonWeather = manager.getLondonWeatherErrorMsg()
+        cancellableGetLondonWeatherErrorMsg = manager.getLondonWeatherErrorMsg()
             .sink(receiveCompletion: { result in
                 switch result {
                 case .finished:

@@ -32,8 +32,8 @@ extension ContentRepository: ContentRepositoryProtocol {
                     let model    = LocationWeatherModel(response)
                     completion(model)
                 }
-            } catch let error {
-                let result = error.localizedDescription
+            } catch {
+                let result = "default_error".localized
                 self?.callbackDelegate?.defaultError(result)
             }
         }
@@ -47,8 +47,8 @@ extension ContentRepository: ContentRepositoryProtocol {
                     let model    = LocationWeatherModel(response)
                     completion(model)
                 }
-            } catch let error {
-                let result = error.localizedDescription
+            } catch {
+                let result = "default_error".localized
                 self?.callbackDelegate?.defaultError(result)
             }
         }
